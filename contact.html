@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -27,32 +27,35 @@
             background-color: #5A0E0E;
             border-radius: 5px;
         }
-        .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60vh;
-            background-color: #5A0E0E;
-        }
-        .hero img {
-            max-width: 80%;
-            max-height: 50vh;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
             padding: 20px;
-            justify-items: center;
-        }
-        .gallery-item {
-            width: 90%;
-            height: 200px;
-            background-color: #8B0000;
+            background-color: #5A0E0E;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .contact-form h2 {
+            text-align: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #8B0000;
+            color: #E6C7A3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #5A0E0E;
         }
     </style>
 </head>
@@ -65,14 +68,14 @@
             <a href="Contact.html">Contact</a>
         </div>
     </nav>
-    <header class="hero">
-        <img src="C:/Users/Gebruiker/Pictures/alib.jpg" alt="Middenafbeelding">
-    </header>
-    <section class="gallery">
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
+    <section class="contact-form">
+        <h2>Contacteer Ons</h2>
+        <form>
+            <input type="text" placeholder="Naam" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Bericht" rows="5" required></textarea>
+            <button type="submit">Verstuur</button>
+        </form>
     </section>
 </body>
 </html>
